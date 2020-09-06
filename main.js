@@ -51,7 +51,24 @@ const btn = document.querySelectorAll(".btn"),
                 num1 = [];
                 console.log(a + '-' + typeof (a) + '  записали в преременную а sign *');
             },
+            percent = () => {
+                b = parseFloat(firstNum);
+                switch (sign) {
+                    case '+':
+                        input.value = (a / 100) * (100 + b);
+                        break;
+                    case '-':
+                        input.value = (a / 100) * (100 - b);
+                        break;
+                    case '*':
+                        input.value = a * ((a / 100) * b);
+                        break;
+                    case '÷':
+                        input.value = a / ((a / 100) * b);
+                        break;
+                }
 
+            },
             reset = () => {
                 console.log('reset');
                 input.value = '0';
@@ -111,6 +128,9 @@ const btn = document.querySelectorAll(".btn"),
                     break;
                 case 'clear':
                     clear();
+                    break;
+                case '%':
+                    percent();
                     break;
             }
 
