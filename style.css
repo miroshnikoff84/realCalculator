@@ -1,0 +1,39 @@
+body {
+    font-size: 15pt;
+}
+.calculator {
+  background-color: darkgrey;
+  margin: 0 auto;
+  width: 312px;
+}
+.container {
+  display: flex;
+  max-width: 315px;
+  flex-wrap: wrap;
+  margin: 0;
+}
+
+.operation {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 312px;
+}
+button {
+  color: white;
+  width: 100px;
+  height: 40px;
+  margin: 2px;
+  background-color: darkslategray;
+  border-radius: 5px;
+}
+.btnResult {
+  width: 312px;
+}
+input {
+  font-family: "sans-serif";
+  max-width: 296px;
+  border-width: 5px;
+  font-size: 30px;
+  height: 40px;
+  margin-bottom: 2px;
+}
