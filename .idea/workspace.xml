@@ -10,7 +10,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ae7724ee-4d70-4a52-96c1-0f608ca52571" name="Default Changelist" comment="" />
+    <list default="true" id="ae7724ee-4d70-4a52-96c1-0f608ca52571" name="Default Changelist" comment="Create calculator">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/main.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,6 +29,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../CordovaApp" />
@@ -38,8 +43,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1599426455501</updated>
-      <workItem from="1599426458746" duration="351000" />
+      <workItem from="1599426458746" duration="1334000" />
     </task>
+    <task id="LOCAL-00001" summary="Create calculator">
+      <created>1599426977291</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1599426977291</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -56,10 +69,18 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Create calculator" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create calculator" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="774" y="114" key="Vcs.Push.Dialog.v2" timestamp="1599426511955">
+    <state x="700" y="318" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1599427062544">
       <screen x="0" y="0" width="2560" height="1050" />
     </state>
-    <state x="774" y="114" key="Vcs.Push.Dialog.v2/0.0.2560.1050@0.0.2560.1050" timestamp="1599426511955" />
+    <state x="700" y="318" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2560.1050@0.0.2560.1050" timestamp="1599427062544" />
+    <state x="774" y="114" key="Vcs.Push.Dialog.v2" timestamp="1599427249137">
+      <screen x="0" y="0" width="2560" height="1050" />
+    </state>
+    <state x="774" y="114" key="Vcs.Push.Dialog.v2/0.0.2560.1050@0.0.2560.1050" timestamp="1599427249137" />
   </component>
 </project>
