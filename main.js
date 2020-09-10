@@ -1,4 +1,4 @@
-let operation = document.querySelector("#operation"),
+let wrap = document.querySelector("#wrap"), // родитель кнопок операторов
     input = document.querySelector('#input'),
     num1 = [], // переменная типа string записанное в массив при вводе
     num3,      // переменная типа string после нажатия на clear
@@ -8,13 +8,12 @@ let operation = document.querySelector("#operation"),
     b;         // переменная второе оперируемое число
 
 const btn = document.querySelectorAll(".btn"),
-    calc = () => {
+    calculator = () => {
         btn.forEach((elem) => {
             elem.addEventListener('click', () => {
                 num1.push(elem.textContent);
                 firstNum = num1.join('');
                 input.value = firstNum;
-                console.log(firstNum + '-' + typeof (firstNum));
             });
         });
         const clear = () => {
@@ -22,46 +21,19 @@ const btn = document.querySelectorAll(".btn"),
                 firstNum = num1.join('');
                 input.value = firstNum;
             },
-            sum = () => {
+            operation = (param) => {
                 a = parseFloat(firstNum);
-                sign = '+';
+                sign = param;
                 input.value = a + sign;
                 num1 = [];
-            },
-            sub = () => {
-                a = parseFloat(firstNum);
-                sign = '-';
-                input.value = a + sign;
-                num1 = [];
-            },
-            division = () => {
-                a = parseFloat(firstNum);
-                sign = '÷';
-                input.value = sign;
-                num1 = [];
-            },
-            multi = () => {
-                a = parseFloat(firstNum);
-                sign = '*';
-                input.value = sign;
-                num1 = [];
+
             },
             percent = () => {
                 b = parseFloat(firstNum);
-                switch (sign) {
-                    case '+':
-                        input.value = (a / 100) * (100 + b);
-                        break;
-                    case '-':
-                        input.value = (a / 100) * (100 - b);
-                        break;
-                    case '*':
-                        input.value = a * ((a / 100) * b);
-                        break;
-                    case '÷':
-                        input.value = a / ((a / 100) * b);
-                        break;
-                }
+                sign === '+' ? input.value = (a / 100) * (100 + b) :
+                    sign === '-' ? input.value = (a / 100) * (100 - b) :
+                        sign === '*' ? input.value = a * ((a / 100) * b) :
+                            sign === '÷' ? input.value = a / ((a / 100) * b) : null;
 
             },
             reset = () => {
@@ -75,59 +47,25 @@ const btn = document.querySelectorAll(".btn"),
             },
 
             result = () => {
-                switch (sign) {
-                    case '+':
-                        b = parseFloat(firstNum);
-                        input.value = (a + b);
-                        break;
-                    case '-':
-                        b = parseFloat(firstNum);
-                        input.value = (a - b);
-                        break;
-                    case '÷':
-                        b = parseFloat(firstNum);
-                        input.value = (a / b);
-                        break;
-                    case '*':
-                        b = parseFloat(firstNum);
-                        input.value = (a * b);
-                        break;
-
-                }
+                b = parseFloat(firstNum);
+                sign === '+' ? input.value = (a + b) :
+                    sign === '-' ? input.value = (a - b) :
+                        sign === '*' ? input.value = (a * b) :
+                            sign === '÷' ? input.value = (a / b) : null;
             }
-        operation.addEventListener('click', (event) => {
+        wrap.addEventListener('click', (event) => {
             let target = event.target;
-            switch (target.innerHTML) {
-                case '+':
-                    sum();
-                    break;
-                case '-':
-                    sub();
-                    break;
-                case '*':
-                    multi();
-                    break;
-                case '÷':
-                    division();
-                    break;
-                case '=':
-                    result();
-                    break;
-                case 'C':
-                    reset();
-                    break;
-                case 'clear':
-                    clear();
-                    break;
-                case '%':
-                    percent();
-                    break;
-                default:
-                    break;
-            }
+            target.innerHTML === '+' ? operation('+') :
+                target.innerHTML === '-' ? operation('-') :
+                    target.innerHTML === '*' ? operation('*') :
+                        target.innerHTML === '÷' ? operation('÷') :
+                            target.innerHTML === '=' ? result() :
+                                target.innerHTML === '%' ? percent() :
+                                    target.innerHTML === 'C' ? reset() :
+                                        target.innerHTML === 'clear' ? clear() : null;
 
         });
 
     };
 
-calc();
+calculator();

@@ -10,8 +10,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ae7724ee-4d70-4a52-96c1-0f608ca52571" name="Default Changelist" comment="Create calculator">
+    <list default="true" id="ae7724ee-4d70-4a52-96c1-0f608ca52571" name="Default Changelist" comment="REFACT calculator">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -38,6 +39,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -49,7 +51,7 @@
       <option name="presentableId" value="Default" />
       <updated>1599426455501</updated>
       <workItem from="1599426458746" duration="6804000" />
-      <workItem from="1599751284305" duration="2539000" />
+      <workItem from="1599751284305" duration="12976000" />
     </task>
     <task id="LOCAL-00001" summary="Create calculator">
       <created>1599426977291</created>
@@ -72,7 +74,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599433485174</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="REFACT calculator">
+      <created>1599753895683</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1599753895683</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -92,16 +101,17 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Create calculator" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create calculator" />
+    <MESSAGE value="REFACT calculator" />
+    <option name="LAST_COMMIT_MESSAGE" value="REFACT calculator" />
   </component>
   <component name="WindowStateProjectService">
     <state x="700" y="318" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1599427062544">
       <screen x="0" y="0" width="2560" height="1050" />
     </state>
     <state x="700" y="318" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2560.1050@0.0.2560.1050" timestamp="1599427062544" />
-    <state x="774" y="114" key="Vcs.Push.Dialog.v2" timestamp="1599433489115">
+    <state x="774" y="114" key="Vcs.Push.Dialog.v2" timestamp="1599753899265">
       <screen x="0" y="0" width="2560" height="1050" />
     </state>
-    <state x="774" y="114" key="Vcs.Push.Dialog.v2/0.0.2560.1050@0.0.2560.1050" timestamp="1599433489115" />
+    <state x="774" y="114" key="Vcs.Push.Dialog.v2/0.0.2560.1050@0.0.2560.1050" timestamp="1599753899265" />
   </component>
 </project>
