@@ -12,7 +12,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ae7724ee-4d70-4a52-96c1-0f608ca52571" name="Default Changelist" comment="Create calculator">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -49,7 +48,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1599426455501</updated>
-      <workItem from="1599426458746" duration="6471000" />
+      <workItem from="1599426458746" duration="6804000" />
+      <workItem from="1599751284305" duration="2539000" />
     </task>
     <task id="LOCAL-00001" summary="Create calculator">
       <created>1599426977291</created>
@@ -65,7 +65,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599427809275</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Create calculator">
+      <created>1599433485174</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1599433485174</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -81,6 +88,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Create calculator" />
@@ -91,9 +99,9 @@
       <screen x="0" y="0" width="2560" height="1050" />
     </state>
     <state x="700" y="318" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2560.1050@0.0.2560.1050" timestamp="1599427062544" />
-    <state x="774" y="114" key="Vcs.Push.Dialog.v2" timestamp="1599427837841">
+    <state x="774" y="114" key="Vcs.Push.Dialog.v2" timestamp="1599433489115">
       <screen x="0" y="0" width="2560" height="1050" />
     </state>
-    <state x="774" y="114" key="Vcs.Push.Dialog.v2/0.0.2560.1050@0.0.2560.1050" timestamp="1599427837841" />
+    <state x="774" y="114" key="Vcs.Push.Dialog.v2/0.0.2560.1050@0.0.2560.1050" timestamp="1599433489115" />
   </component>
 </project>

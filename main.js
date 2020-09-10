@@ -1,11 +1,11 @@
 let operation = document.querySelector("#operation"),
     input = document.querySelector('#input'),
-    num1 = [],
-    num3,
-    firstNum,
-    sign,
-    a,
-    b;
+    num1 = [], // переменная типа string записанное в массив при вводе
+    num3,      // переменная типа string после нажатия на clear
+    firstNum,  // переменная преобразуется из num3(string) в firstNum(number)
+    sign,      // переменная хранящая введенный оператор (+ - * ÷)
+    a,         // переменная первое оперируемое число
+    b;         // переменная второе оперируемое число
 
 const btn = document.querySelectorAll(".btn"),
     calc = () => {
@@ -21,35 +21,30 @@ const btn = document.querySelectorAll(".btn"),
                 num3 = num1.pop();
                 firstNum = num1.join('');
                 input.value = firstNum;
-                console.log(firstNum + '-' + typeof (firstNum));
             },
             sum = () => {
-                input.value = '';
                 a = parseFloat(firstNum);
                 sign = '+';
+                input.value = a + sign;
                 num1 = [];
-                console.log(a + '-' + typeof (a) + '  записали в преременную а sign +');
             },
             sub = () => {
-                input.value = '';
                 a = parseFloat(firstNum);
                 sign = '-';
+                input.value = a + sign;
                 num1 = [];
-                console.log(a + '-' + typeof (a) + '  записали в преременную а sign -');
             },
             division = () => {
-                input.value = '';
                 a = parseFloat(firstNum);
                 sign = '÷';
+                input.value = sign;
                 num1 = [];
-                console.log(a + '-' + typeof (a) + '  записали в преременную а sign ÷');
             },
             multi = () => {
-                input.value = '';
                 a = parseFloat(firstNum);
                 sign = '*';
+                input.value = sign;
                 num1 = [];
-                console.log(a + '-' + typeof (a) + '  записали в преременную а sign *');
             },
             percent = () => {
                 b = parseFloat(firstNum);
@@ -70,7 +65,6 @@ const btn = document.querySelectorAll(".btn"),
 
             },
             reset = () => {
-                console.log('reset');
                 input.value = '0';
                 num1 = [];
                 num3 = '';
@@ -85,22 +79,18 @@ const btn = document.querySelectorAll(".btn"),
                     case '+':
                         b = parseFloat(firstNum);
                         input.value = (a + b);
-                        console.log(typeof (firstNum));
                         break;
                     case '-':
                         b = parseFloat(firstNum);
                         input.value = (a - b);
-                        console.log(typeof (firstNum));
                         break;
                     case '÷':
                         b = parseFloat(firstNum);
                         input.value = (a / b);
-                        console.log(typeof (firstNum));
                         break;
                     case '*':
                         b = parseFloat(firstNum);
                         input.value = (a * b);
-                        console.log(typeof (firstNum));
                         break;
 
                 }
@@ -132,11 +122,12 @@ const btn = document.querySelectorAll(".btn"),
                 case '%':
                     percent();
                     break;
+                default:
+                    break;
             }
 
         });
 
     };
-
 
 calc();
